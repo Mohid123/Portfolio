@@ -19,34 +19,31 @@
 
 body {
 	background: url('/images/coke.jpg');
-	background-repeat: no-repeat;
-  background-size: auto;
+  width: 100vw;
 }
 
 .ml1 {
   font-weight: 500;
-  font-size: 2.3vw;
+  font-size: 2.5vw;
   text-shadow: 2px 2px black;
 }
 
-.ml1 .letter {
+.ml1 .letters {
   display: inline-block;
   line-height: 1em;
 }
 
 .ml1 .text-wrapper {
-  display: inline-flex;
-  padding-top: 2%;
-  padding-right: 1%;
-  padding-bottom: 2%;
-  padding-left: 1%;
+  display: inline-block;
+  padding: 2% 1% 2% 1%;
+  position: relative;
 }
 
 .ml1 .line {
   opacity: 0;
   position: absolute;
   left: 0;
-  height: 0.2%;
+  height: 2px;
   width: 100%;
   background-color: #fff;
   transform-origin: 0 0;
