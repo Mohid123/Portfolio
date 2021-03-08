@@ -92,6 +92,11 @@ i {
 .iconos {
 	color: white;
 	display: inline-block;
+  transition: 0.5s;
+}
+
+.iconos:hover {
+  transform: scale(1.2) translateY(-10px);
 }
 
 #mapid { height: 80vh; }
