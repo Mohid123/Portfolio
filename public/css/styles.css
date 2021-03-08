@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+body {
+	background: #009688;
+	margin: 0;
+	padding: 0;
+}
+
+
+.main {
+  width: 100vw;
+  /*margin-top: 5em;*/
+  text-align: center;
+  color: floralwhite;
+}
+
+.intro {
+	color: white;
+	text-shadow: 2px 2px #F79BA2;
+	margin: 5em 10em!important;
+	width: 30%!important;
+	font-family: 'Bangers', sans-serif;
+	letter-spacing: 2px;
+}
+
+.intro h6 {
+	font-family: 'Akaya Telivigala', sans-serif;
+	text-shadow: none;
+}
+
+.brand-logo {
+	font-family: 'Bangers', cursive;
+}
+
+.header {
+	color: white;
+	font-family: 'Bangers', cursive;
+}
+
+.white-text {
+	font-size: 20px;
+}
+
+.link {
+	color: white;	
+}
+
+.modal-content h4 {
+	font-family: 'Bangers', cursive;
+}
+
+/*SKILLSET*/
+
+.skillset {
+	font-family: 'Bangers', sans-serif;
+	font-weight: 600;
+	text-shadow: 2px 2px lightpink;
+	letter-spacing: 6px;
+}
+
+.animate-me {
+	font-weight: 400;
+    font-size: 2.4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Prompt", sans-serif;
+    height: 10vh;
+    box-sizing: border-box;
+    letter-spacing: 6px;
+    margin: 0;
+    line-height: 1.2;
+}
+
+i {
+	margin-right: 1em;
+}
+
+.headed {
+  font-family: 'Bangers', cursive;
+  margin-bottom: 5%;
+  text-shadow: 2px 2px lightpink;
+}
+
+
+.iconos {
+	color: white;
+	display: inline-block;
+}
+
+#mapid { height: 80vh; }
+
+/*END*/
+
+
+.proj {
+	z-index: 1000;
+	--interval: 1s;
+	display: grid;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	color: white;
+	font-family: 'Londrina Outline', sans-serif;
+	font-weight: 600;
+	text-size-adjust: auto;
+	text-shadow: 
+    0 0 10px var(--color1),
+    0 0 20px var(--color2),
+    0 0 40px var(--color3),
+    0 0 80px var(--color4);
+    will-change: filter, color;
+    filter: saturate(60%);
+    animation: flicker steps(100) var(--interval) 1s infinite;
+}
+
+.proj:nth-of-type(1) {
+  color: yellow;
+  --color1: goldenrod;
+  --color2: #FF5BBC;
+  --color3: #FF0C9C;
+  --color4: #900C5A;
+}
+
+.proj:nth-of-type(2) {
+  color: #52FF74;
+  --color1: #00FB31;
+  --color2: #008A1B;
+  --color3: #009C84;
+  --color4: #2AFFD5;
+  font-family: Bad Script;
+}
+
+@keyframes flicker {
+  50% {
+    color: white;
+    filter: saturate(200%) hue-rotate(20deg);
+  }
+}
