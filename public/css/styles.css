@@ -64,7 +64,7 @@ body {
 .animate-me {
 	font-weight: 400;
   width: 100vw;
-    font-size: 3vw;
+    font-size: 200%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113,7 +113,7 @@ i {
 	align-content: center;
 	justify-content: center;
 	color: white;
-  font-size: 5vw;
+  font-size: 350%;
 	font-family: 'Londrina Outline', sans-serif;
 	font-weight: 600;
 	text-shadow: 
@@ -122,7 +122,7 @@ i {
     0 0 40px var(--color3),
     0 0 80px var(--color4);
     will-change: filter, color;
-    filter: saturate(80%);
+    filter: saturate(50%);
     animation: flicker steps(100) var(--interval) 1s infinite;
 }
 
