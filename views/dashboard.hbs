@@ -32,8 +32,11 @@
     		IST-NAV
         </a>
     </h2>
-    <h2 class="proj" title="Not Ready yet... UNDER CONSTRUCTION">ANIMETOGRAPHY</h2>
-    <div class="parallax"><img src="/images/wall.jpg" alt="rain"></div>
+    <h2 class="proj">
+      <a class="link modal-trigger" href="#modal2" title="Click to View Details">UroojMurtaza.com</a>
+    </h2>
+    <h2 class="proj" title="COMING SOON...">MS International</h2>
+    <div class="parallax"><img src="/images/wall.jpg" alt="rain" height="900"></div>
 </div>
 
 
@@ -44,7 +47,7 @@
     	<div class="divider"></div>
     	<br>
     	<img src="/images/nav.png" style="width: 80%;">
-        <p>IST-NAV is a web based routing and navigation application developed for the Institute of Space Technology, Islamabad. The purpose of the application is to provide routing and navigation services "within" the Institute itself, something that Google Maps or other mapping services do not provide. I developed the front end of the application using HTML/CSS/JS along with some jQuery and Bootstrap. For the backend I used PostgreSQL, GeoServer and for the web map I used LeafletJS</p>
+        <p>A routing and navigation prototype application developed for the Institute of Space Technology, Islamabad as my Student Final Year Project. The purpose of the application is to provide routing and navigation services "within" the Institute itself.</p>
     </div>
     <div class="modal-footer pink darken-4">
       <a href="https://mohid123.github.io/" target="_blank" class="modal-close waves-effect waves-green btn-flat white-text">DEMO</a>
@@ -53,6 +56,19 @@
   </div>
 
   <!-- Modal Structure2 to be made later -->
+
+  <div id="modal2" class="modal">
+    <div class="modal-content lime darken-3">
+      <h4>UroojMurtaza.com</h4>
+      <div class="divider"></div>
+      <br>
+      <img src="/images/Capture.png" style="width: 80%;">
+        <p>UroojMurtaza.com is a Content-Writer portfolio website. The website showcases the client's skills and experience as an amateur astronmer and content writer.</p>
+    </div>
+    <div class="modal-footer orange darken-3">
+      <a href="https://uroojmurtaza.herokuapp.com/" target="_blank" class="modal-close waves-effect waves-green btn-flat white-text">VISIT HERE!</a>
+    </div>
+  </div>
 
 <h1 class="skillset">My Skills</h1>
 <hr>
@@ -119,9 +135,9 @@
 <hr>
 <div class="section section-white">
     <h1 class="headed">Contact Me</h1>
-    {{!-- <a class="iconos" href="https://twitter.com/AniMohid" target="_blank"><i class="fab fa-twitter-square fa-3x"></i></a> --}}
+    <a class="iconos" href="https://twitter.com/AniMohid" target="_blank"><i class="fab fa-twitter-square fa-3x"></i></a>
 	<a class="iconos" href="https://www.linkedin.com/in/muhammad-mohid-2762471b9/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
-	<a class="iconos" href="https://github.com/Mohid123" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+	{{!-- <a class="iconos" href="https://github.com/Mohid123" target="_blank"><i class="fab fa-github fa-3x"></i></a> --}}
 	<a class="iconos" href="mailto: muhammadmohid141@gmail.com"><i class="fas fa-envelope-square fa-3x"></i></a>
 </div>
 <br>
@@ -186,13 +202,13 @@ animation.add({
 });
 
 
-var mymap = L.map('mapid').setView([33.538627, 73.066909], 10);
+var mymap = L.map('mapid').setView([33.538627, 73.066909], 11);
 
-L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
-	attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',
+L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
+	attribution: '© <a href="https://stadiamaps.com/">Stadia Maps</a>, © <a href="https://openmaptiles.org/">OpenMapTiles</a> © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
 }).addTo(mymap);
 
 var marker = L.marker([33.538627, 73.066909]).addTo(mymap);
-marker.bindPopup("<h6>Muhammad Mohid, Islamabad, Pakistan</h6>").openPopup();
+marker.bindPopup("<h6>Muhammad Mohid, Rawalpindi, Pakistan</h6>").openPopup();
 	
 </script>

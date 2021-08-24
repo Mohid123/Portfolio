@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One+Outline&display=swap');
 
 body {
 	background: #009688;
@@ -24,6 +26,7 @@ body {
 	width: 30%!important;*/
 	font-family: 'Bangers', sans-serif;
 	letter-spacing: 2px;
+  padding-bottom: 30px;
 }
 
 .intro h6 {
@@ -93,11 +96,11 @@ i {
 .iconos {
 	color: white;
 	display: inline-block;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .iconos:hover {
-  transform: scale(1.2) translateY(-10px);
+  transform: scale(1.1) translateY(-4px);
 }
 
 #mapid { height: 80vh; }
@@ -132,6 +135,7 @@ i {
   --color2: #FF5BBC;
   --color3: #FF0C9C;
   --color4: #900C5A;
+  font-family: Sriracha;
 }
 
 .proj:nth-of-type(2) {
@@ -141,6 +145,15 @@ i {
   --color3: #009C84;
   --color4: #2AFFD5;
   font-family: Bad Script;
+}
+
+.proj:nth-of-type(3) {
+  color: #ffc107;
+  --color1: #ffca28;
+  --color2: #ffd54f;
+  --color3: #ffe082;
+  --color4: #ffab00;
+  font-family: Kumar One Outline;
 }
 
 @keyframes flicker {
