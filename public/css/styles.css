@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kumar+One+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
 
 body {
 	background: #009688;
@@ -129,7 +130,7 @@ pre {
 	color: white;
   font-size: 280%;
 	font-family: 'Londrina Outline', sans-serif;
-	font-weight: 600;
+	font-weight: 800;
 	text-shadow: 
     0 0 10px var(--color1),
     0 0 20px var(--color2),
@@ -146,7 +147,7 @@ pre {
   --color2: #FF5BBC;
   --color3: #FF0C9C;
   --color4: #900C5A;
-  font-family: Sriracha;
+  font-family: Gruppo;
 }
 
 .proj:nth-of-type(2) {
@@ -165,6 +166,15 @@ pre {
   --color3: #ffe082;
   --color4: #ffab00;
   font-family: Kumar One Outline;
+}
+
+.proj:nth-of-type(4) {
+  color: #01579b;
+  --color1: #0288d1;
+  --color2: #0277bd;
+  --color3: #03a9f4;
+  --color4: #b3e5fc;
+  font-family: Londrina Outline;
 }
 
 @keyframes flicker {
